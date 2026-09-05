@@ -1,7 +1,7 @@
 ---
 title: Java-to-Jython Code Conversion Tutorial
 createTime: 2026/04/04 21:28:14
-permalink: /en/lm1kuhiw/
+permalink: /en/docs/lm1kuhiw/
 ---
 
 This tutorial explains how to convert Java code to Jython (Python for Java) code, specifically for this Minecraft Fabric mod development project.
