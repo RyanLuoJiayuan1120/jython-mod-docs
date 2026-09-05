@@ -8,13 +8,13 @@ config:
     forceDark: true
     hero:
       name: Jython Mod
-      tagline: 在 Minecraft 中使用 Python 3 编写模组
-      text: 一个基于 GraalPy 的模组，支持 Fabric / NeoForge / Paper。
+      tagline: Run Python 3 mods in Minecraft
+      text: A GraalPy-powered Minecraft mod supporting Fabric / NeoForge / Paper.
       actions:
         -
           theme: brand
-          text: 开始使用
-          link: /docs/usage/module/
+          text: Get Started
+          link: /en/docs/usage/module/
         -
           theme: alt
           text: GitHub →

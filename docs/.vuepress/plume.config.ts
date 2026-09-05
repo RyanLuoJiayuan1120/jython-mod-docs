@@ -11,8 +11,8 @@
  */
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import navbar from './navbar'
-import collections from './collections'
+import { navbar, enNavbar } from './navbar'
+import { collections, enCollections } from './collections'
 
 /**
  * @see https://theme-plume.vuejs.press/config/theme/
@@ -57,8 +57,19 @@ export default defineThemeConfig({
     // organization: '',
   },
 
-  navbar,
-  collections,
+  /* 主题多语言：每语言一份 navbar / collections（key 需与 config.ts locales 一致） */
+  locales: {
+    '/': {
+      selectLanguageName: '简体中文',
+      navbar,
+      collections,
+    },
+    '/en/': {
+      selectLanguageName: 'English',
+      navbar: enNavbar,
+      collections: enCollections,
+    },
+  },
 
   /**
    * 公告板

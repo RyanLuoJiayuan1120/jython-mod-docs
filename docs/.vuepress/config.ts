@@ -19,6 +19,11 @@ export default defineUserConfig({
   title: 'Jython Mod Docs',
   description: 'Jython Mod Docs',
 
+  locales: {
+    '/': { lang: 'zh-CN', title: 'Jython Mod 文档', description: 'Jython Mod 文档' },
+    '/en/': { lang: 'en-US', title: 'Jython Mod Docs', description: 'Jython Mod Docs' },
+  },
+
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
@@ -32,9 +37,9 @@ export default defineUserConfig({
     // hostname: 'https://your_site_url',
 
     /* 文档仓库配置，用于 editLink */
-    // docsRepo: '',
-    // docsDir: 'docs',
-    // docsBranch: '',
+    docsRepo: 'RyanLuoJiayuan1120/jython-mod-docs',
+    docsDir: 'docs',
+    docsBranch: 'master',
 
     /* 页内信息 */
     // editLink: true,
@@ -90,47 +95,17 @@ export default defineUserConfig({
      * markdown
      * @see https://theme-plume.vuejs.press/config/markdown/
      */
-    // markdown: {
-    //   abbr: true,         // 启用 abbr 语法  *[label]: content
-    //   annotation: true,   // 启用 annotation 语法  [+label]: content
-    //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
-    //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
-    //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
-    //   bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
-    //   youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
-    //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
-    //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
-    //   icon: { provider: 'iconify' },        // 启用内置图标语法  ::icon-name::
-    //   table: true,        // 启用表格增强容器语法 ::: table
-    //   codepen: true,      // 启用嵌入 codepen 语法 @[codepen](user/slash)
-    //   replit: true,       // 启用嵌入 replit 语法 @[replit](user/repl-name)
-    //   codeSandbox: true,  // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)
-    //   jsfiddle: true,     // 启用嵌入 jsfiddle 语法 @[jsfiddle](user/id)
-    //   npmTo: true,        // 启用 npm-to 容器  ::: npm-to
-    //   demo: true,         // 启用 demo 容器  ::: demo
-    //   collapse: true,     // 启用折叠容器  ::: collapse
-    //   repl: {             // 启用 代码演示容器
-    //     go: true,         // ::: go-repl
-    //     rust: true,       // ::: rust-repl
-    //     kotlin: true,     // ::: kotlin-repl
-    //     python: true,     // ::: python-repl
-    //   },
-    //   math: {             // 启用数学公式
-    //     type: 'katex',
-    //   },
-    //   chartjs: true,      // 启用 chart.js
-    //   echarts: true,      // 启用 ECharts
-    //   mermaid: true,      // 启用 mermaid
-    //   flowchart: true,    // 启用 flowchart
-    //   image: {
-    //     figure: true,     // 启用 figure
-    //     lazyload: true,   // 启用图片懒加载
-    //     mark: true,       // 启用图片标记
-    //     size: true,       // 启用图片大小
-    //   },
-    //   include: true,      // 在 Markdown 文件中导入其他 markdown 文件内容
-    //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
-    // },
+    markdown: {
+      plot: true,         // 启用隐秘文本语法 !!xxxx!!
+      bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
+      collapse: true,     // 启用折叠容器  ::: collapse
+      math: {             // 启用数学公式
+        type: 'katex',
+      },
+      chartjs: true,      // 启用 chart.js
+      include: {},        // 在 Markdown 文件中导入其他 markdown 文件内容
+      imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
+    },
 
     /**
      * 水印
@@ -142,17 +117,16 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+    comment: {
+      provider: 'Giscus',
+      repo: 'RyanLuoJiayuan1120/jython-mod-docs',
+      repoId: 'R_kgDOR5oq2g',
+      category: 'Show and tell',
+      categoryId: 'DIC_kwDOR5oq2s4C6CXa',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'bottom',
+    },
 
     /**
      * 资源链接替换
