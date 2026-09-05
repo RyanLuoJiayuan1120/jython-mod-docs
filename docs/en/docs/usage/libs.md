@@ -11,7 +11,7 @@ The helper libraries live in the `net.luojiayuan.jython.mod.libs` package and pr
 > Where other common APIs belong:
 > - `McReflect` (reflection calls) → [special-syntax.md](../special-syntax.md)
 > - `GameDirHelper` (directory utilities) → [utils section](#other-utility-classes)
-> - `BytecodeHelper` (bytecode transformation) → [BytecodeHelper section](#bytecodehelper--bytecode-transformation)
+> - `BytecodeHelper` (bytecode transformation) → [BytecodeHelper section](#bytecodehelper-—-bytecode-transformation)
 
 ## item — Item Registration
 

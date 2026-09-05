@@ -11,7 +11,7 @@ createTime: 2026/09/05 21:03:12
 > 其他常用 API 的归属：
 > - `McReflect`（反射调用）→ [special-syntax.md](../special-syntax.md)
 > - `GameDirHelper`（目录工具）→ [utils 小节](#其他工具类)
-> - `BytecodeHelper`（字节码转换）→ [BytecodeHelper 小节](#bytecodehelper--字节码转换)
+> - `BytecodeHelper`（字节码转换）→ [BytecodeHelper 小节](#bytecodehelper-—-字节码转换)
 
 ## item — 物品注册
 
